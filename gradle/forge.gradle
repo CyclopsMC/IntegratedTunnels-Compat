@@ -7,12 +7,26 @@ repositories {
     }
 }
 dependencies {
+    // Add something like 'integratedtunnels_version_local=0.1.0-DEV' to your gradle.properties if you want to use a custom local Integrated Tunnels version.
+    if(project.hasProperty("integratedtunnels_version_local")) {
+        compile "org.cyclops.integratedtunnels:IntegratedTunnels:${config.minecraft_version}-${project.integratedtunnels_version_local}:deobf"
+    } else {
+        compile "org.cyclops.integratedtunnels:IntegratedTunnels:${config.minecraft_version}-${config.integratedtunnels_version}:deobf"
+    }
     // Add something like 'cyclopscore_version_local=0.1.0-DEV' to your gradle.properties if you want to use a custom local CyclopsCore version.
     if(project.hasProperty("cyclopscore_version_local")) {
         compile "org.cyclops.cyclopscore:CyclopsCore:${config.minecraft_version}-${project.cyclopscore_version_local}:deobf"
     } else {
         compile "org.cyclops.cyclopscore:CyclopsCore:${config.minecraft_version}-${config.cyclopscore_version}:deobf"
     }
+
+    deobfCompile("org.cyclops.integrateddynamics:IntegratedDynamics:${config.integrateddynamics_version}") { // https://dl.bintray.com/cyclopsmc/dev/org/cyclops/integrateddynamics/IntegratedDynamics/
+        exclude group: 'org.cyclops.cyclopscore', module: 'CyclopsCore'
+    }
+    deobfCompile("org.cyclops.commoncapabilities:CommonCapabilities:${config.commoncapabilities_version}") { // https://dl.bintray.com/cyclopsmc/dev/org/cyclops/commoncapabilities/CommonCapabilities/
+        exclude group: 'org.cyclops.cyclopscore', module: 'CyclopsCore'
+    }
+
 
     // Project lombok
     compile "org.projectlombok:lombok:1.14.4"
