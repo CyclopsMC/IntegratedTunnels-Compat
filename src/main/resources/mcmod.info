@@ -1,0 +1,18 @@
+[
+{
+  "modid": "integratedtunnelscompat",
+  "name": "IntegratedTunnels-Compat",
+  "description": "Integrated Tunnels compatibility with other mods",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "logoFile": "assets/integratedtunnelscompat/textures/logo.png",
+  "url": "https://github.com/CyclopsMC/IntegratedTunnels-Compat",
+  "updateUrl": "https://minecraft.curseforge.com/projects/TODO",
+  "authorList": [ "rubensworks (aka kroeserr)" ],
+  "credits": "rubensworks (aka kroeserr)",
+  "parent": "",
+  "screenshots": [],
+  "dependencies": [],
+  "requiredMods": [ "forge", "cyclopscore" ]
+}
+]
