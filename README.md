@@ -1,12 +1,12 @@
 ## IntegratedTunnels-Compat
 
 [![Build Status](https://travis-ci.org/CyclopsMC/IntegratedTunnels-Compat.svg?branch=master-1.10)](https://travis-ci.org/CyclopsMC/IntegratedTunnels-Compat)
-[![Download](https://img.shields.io/maven-metadata/v/http/cyclopsmc.jfrog.io/cyclopsmc/libs-release/org/cyclops/integratedtunnelscompat/IntegratedTunnels-Compat/maven-metadata.xml.svg) ](https://cyclopsmc.jfrog.io/cyclopsmc/libs-release/org/cyclops/integratedtunnelscompat/IntegratedTunnels-Compat/)
+[![Download](https://img.shields.io/maven-metadata/v/https/oss.jfrog.org/artifactory/simple/libs-release/org/cyclops/integratedtunnelscompat/IntegratedTunnels-Compat/maven-metadata.xml.svg) ](https://oss.jfrog.org/artifactory/simple/libs-release/org/cyclops/integratedtunnelscompat/IntegratedTunnels-Compat/)
 
 [Integrated Tunnels](https://github.com/CyclopsMC/IntegratedTunnels) compatibility with other mods.
 This mod is automatically packaged with [Integrated Tunnels](https://github.com/CyclopsMC/IntegratedTunnels).
 
-[Development builds](https://cyclopsmc.jfrog.io/cyclopsmc/libs-release/org/cyclops/integratedtunnelscompat/IntegratedTunnels-Compat/) are hosted by [JFrog Artifactory](https://www.jfrog.com/artifactory/).
+[Development builds](https://oss.jfrog.org/artifactory/simple/libs-release/org/cyclops/integratedtunnelscompat/IntegratedTunnels-Compat/) are hosted by [JFrog Artifactory](https://www.jfrog.com/artifactory/).
 
 ### Contributing
 * Before submitting a pull request containing a new feature, please discuss this first with one of the lead developers.
