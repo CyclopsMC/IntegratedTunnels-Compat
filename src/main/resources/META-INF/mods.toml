@@ -1,0 +1,37 @@
+modLoader="javafml"
+loaderVersion="[31.2,)"
+issueTrackerURL="https://github.com/CyclopsMC/IntegratedTunnels-Compat/issues"
+[[mods]]
+modId="integratedtunnelscompat"
+version="${file.jarVersion}"
+displayName="IntegratedTunnels-Compat"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/integrated-tunnels"
+logoFile="logo.png"
+authors="rubensworks (aka kroeser)"
+description='''
+Integrated Tunnels compatibility with other mods.
+'''
+[[dependencies.integratedtunnelscompat]]
+    modId="cyclopscore"
+    mandatory=true
+    versionRange="[1.8.0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.integratedtunnelscompat]]
+    modId="integratedtunnels"
+    mandatory=true
+    versionRange="[1.6.12,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.integratedtunnelscompat]]
+    modId="forge"
+    mandatory=true
+    versionRange="[31.2,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.integratedtunnelscompat]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.15.2]"
+    ordering="NONE"
+    side="BOTH"
