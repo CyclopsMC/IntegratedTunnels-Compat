@@ -1,7 +1,7 @@
 ## IntegratedTunnels-Compat
 
 [![Build Status](https://travis-ci.org/CyclopsMC/IntegratedTunnels-Compat.svg)](https://travis-ci.org/CyclopsMC/IntegratedTunnels-Compat)
-[![Download](https://img.shields.io/maven-metadata/v/https/oss.jfrog.org/artifactory/simple/libs-release/org/cyclops/integratedtunnelscompat/IntegratedTunnels-Compat/maven-metadata.xml.svg) ](https://oss.jfrog.org/artifactory/simple/libs-release/org/cyclops/integratedtunnelscompat/IntegratedTunnels-Compat/)
+[![Download](https://img.shields.io/maven-metadata/IntegratedTunnels-Compat/https/oss.jfrog.org/artifactory/simple/libs-release/org/cyclops/integratedtunnelscompat/IntegratedTunnels-Compat/maven-metadata.xml.svg) ](https://oss.jfrog.org/artifactory/simple/libs-release/org/cyclops/integratedtunnelscompat/IntegratedTunnels-Compat/)
 
 [Integrated Tunnels](https://github.com/CyclopsMC/IntegratedTunnels) compatibility with other mods.
 This mod is automatically packaged with [Integrated Tunnels](https://github.com/CyclopsMC/IntegratedTunnels).
