@@ -68,6 +68,9 @@ repositories {
             password = project.findProperty("gpr.key") ?: System.getenv("MAVEN_KEY")
         }
     }
+    maven {
+        url = "https://www.cursemaven.com"
+    }
 }
 
 dependencies {
@@ -105,9 +108,17 @@ dependencies {
         compile "org.cyclops.cyclopscore:cyclopscore:${config.minecraft_version}-${config.cyclopscore_version}:deobf"
     }
 
-    compile("org.cyclops.commoncapabilities:commoncapabilities:${config.commoncapabilities_version}:deobf") { // https://dl.bintray.com/cyclopsmc/dev/org/cyclops/commoncapabilities/CommonCapabilities/
-        exclude group: 'org.cyclops.cyclopscore', module: 'cyclopscore'
+    if(project.hasProperty("commoncapabilities_version_local")) {
+        compile ("org.cyclops.commoncapabilities:commoncapabilities:${project.commoncapabilities_version_local}:deobf") {
+            transitive = false
+        }
+    } else {
+        compile("org.cyclops.commoncapabilities:commoncapabilities:${config.commoncapabilities_version}:deobf") { // https://dl.bintray.com/cyclopsmc/dev/org/cyclops/commoncapabilities/CommonCapabilities/
+            exclude group: 'org.cyclops.cyclopscore', module: 'cyclopscore'
+        }
     }
+
+    compile fg.deobf("curse.maven:mekanism-268560:${config.mekanism_file_id}")
 }
 
 minecraft {

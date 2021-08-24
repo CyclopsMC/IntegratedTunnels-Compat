@@ -3,9 +3,13 @@ package org.cyclops.integratedtunnelscompat;
 import net.minecraft.item.ItemGroup;
 import net.minecraftforge.fml.common.Mod;
 import org.apache.logging.log4j.Level;
+import org.cyclops.cyclopscore.config.ConfigHandler;
 import org.cyclops.cyclopscore.init.ModBaseVersionable;
+import org.cyclops.cyclopscore.modcompat.ModCompatLoader;
 import org.cyclops.cyclopscore.proxy.IClientProxy;
 import org.cyclops.cyclopscore.proxy.ICommonProxy;
+import org.cyclops.integratedtunnels.IntegratedTunnels;
+import org.cyclops.integratedtunnelscompat.modcompat.mekanism.MekanismModCompat;
 import org.cyclops.integratedtunnelscompat.proxy.ClientProxy;
 import org.cyclops.integratedtunnelscompat.proxy.CommonProxy;
 
@@ -28,8 +32,21 @@ public class IntegratedTunnelsCompat extends ModBaseVersionable<IntegratedTunnel
     }
 
     @Override
+    protected void loadModCompats(ModCompatLoader modCompatLoader) {
+        super.loadModCompats(modCompatLoader);
+        modCompatLoader.addModCompat(new MekanismModCompat());
+    }
+
+    @Override
     protected ItemGroup constructDefaultItemGroup() {
-        return null;
+        return IntegratedTunnels._instance.getDefaultItemGroup();
+    }
+
+    @Override
+    protected void onConfigsRegister(ConfigHandler configHandler) {
+        super.onConfigsRegister(configHandler);
+
+        configHandler.addConfigurable(new GeneralConfig());
     }
 
     @Override

@@ -1,0 +1,5 @@
+{
+  "_comment": "Part types",
+  "parttype.integratedtunnelscompat.interface_gas": "Gas Interface",
+  "parttype.integratedtunnelscompat.interface_gas.info": "Attaches a Mekanism gas holder to the network"
+}

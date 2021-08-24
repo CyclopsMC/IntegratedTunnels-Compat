@@ -16,5 +16,6 @@ public class Reference {
     public static final String MOD_FORGE = "forge";
     public static final String MOD_CYCLOPSCORE = "cyclopscore";
     public static final String MOD_INTEGRATEDTUNNELS = "integratedtunnels";
+    public static final String MOD_MEKANISM = "mekanism";
 
 }
