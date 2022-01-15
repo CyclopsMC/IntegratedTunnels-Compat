@@ -8,10 +8,10 @@ package org.cyclops.integratedtunnelscompat;
  */
 @SuppressWarnings("javadoc")
 public class Reference {
-	
+
     // Mod info
     public static final String MOD_ID = "integratedtunnelscompat";
-    
+
     // MOD ID's
     public static final String MOD_FORGE = "forge";
     public static final String MOD_CYCLOPSCORE = "cyclopscore";

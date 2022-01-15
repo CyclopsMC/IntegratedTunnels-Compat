@@ -17,7 +17,7 @@ import org.cyclops.integratedtunnelscompat.proxy.CommonProxy;
 @Mod(Reference.MOD_ID)
 public class IntegratedTunnelsCompat extends ModBaseVersionable<IntegratedTunnelsCompat> {
 
-    
+
     /**
      * The unique instance of this mod.
      */
@@ -49,7 +49,7 @@ public class IntegratedTunnelsCompat extends ModBaseVersionable<IntegratedTunnel
     public static void clog(String message) {
         clog(Level.INFO, message);
     }
-    
+
     /**
      * Log a new message of the given level for this mod.
      * @param level The level in which the message must be shown.
