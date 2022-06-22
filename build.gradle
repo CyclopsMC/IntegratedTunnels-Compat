@@ -54,6 +54,11 @@ sourceSets {
     test
 }
 
+configurations {
+    modLib
+    implementation.extendsFrom modLib
+}
+
 repositories {
     mavenCentral()
 	mavenLocal()
@@ -84,13 +89,13 @@ dependencies {
 	// Add something like 'integrateddynamics_version_local=0.1.0-DEV' to your gradle.properties if you want to use a custom local Integrated Dynamics version.
     if(secrets.integrateddynamics_version_local) {
         implementation "org.cyclops.integrateddynamics:integrateddynamics:${secrets.integrateddynamics_version_local}:deobf"
-        runtimeOnly "com.google.re2j:re2j:1.1"
+        modLib "com.google.re2j:re2j:1.1"
     } else {
         implementation("org.cyclops.integrateddynamics:integrateddynamics:${project.integrateddynamics_version}:deobf") {
             exclude group: 'org.cyclops.cyclopscore', module: 'cyclopscore'
             exclude group: 'org.cyclops.commoncapabilities', module: 'commoncapabilities'
         }
-        runtimeOnly "com.google.re2j:re2j:1.1"
+        modLib "com.google.re2j:re2j:1.1"
     }
 
     // Add something like 'cyclopscore_version_local=0.1.0-DEV' to your gradle.properties if you want to use a custom local CyclopsCore version.
@@ -118,6 +123,10 @@ minecraft {
                     source sourceSets.main
                 }
             }
+
+            lazyToken('minecraft_classpath') {
+                configurations.modLib.copyRecursive().resolve().collect { it.absolutePath }.join(File.pathSeparator)
+            }
         }
 
         server {
@@ -127,6 +136,10 @@ minecraft {
                 integratedtunnelscompat {
                     source sourceSets.main
                 }
+            }
+
+            lazyToken('minecraft_classpath') {
+                configurations.modLib.copyRecursive().resolve().collect { it.absolutePath }.join(File.pathSeparator)
             }
         }
 
@@ -138,6 +151,10 @@ minecraft {
                 integratedtunnelscompat {
                     source sourceSets.main
                 }
+            }
+
+            lazyToken('minecraft_classpath') {
+                configurations.modLib.copyRecursive().resolve().collect { it.absolutePath }.join(File.pathSeparator)
             }
         }
     }
