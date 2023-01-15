@@ -1,6 +1,5 @@
 package org.cyclops.integratedtunnelscompat;
 
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraftforge.fml.common.Mod;
 import org.apache.logging.log4j.Level;
 import org.cyclops.cyclopscore.init.ModBaseVersionable;
@@ -28,8 +27,8 @@ public class IntegratedTunnelsCompat extends ModBaseVersionable<IntegratedTunnel
     }
 
     @Override
-    protected CreativeModeTab constructDefaultCreativeModeTab() {
-        return null;
+    protected boolean hasDefaultCreativeModeTab() {
+        return false;
     }
 
     @Override
