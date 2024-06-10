@@ -1,6 +1,7 @@
 package org.cyclops.integratedtunnelscompat;
 
-import net.minecraftforge.fml.common.Mod;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.common.Mod;
 import org.apache.logging.log4j.Level;
 import org.cyclops.cyclopscore.init.ModBaseVersionable;
 import org.cyclops.cyclopscore.proxy.IClientProxy;
@@ -22,8 +23,8 @@ public class IntegratedTunnelsCompat extends ModBaseVersionable<IntegratedTunnel
      */
     public static IntegratedTunnelsCompat _instance;
 
-    public IntegratedTunnelsCompat() {
-        super(Reference.MOD_ID, (instance) -> _instance = instance);
+    public IntegratedTunnelsCompat(IEventBus modEventBus) {
+        super(Reference.MOD_ID, (instance) -> _instance = instance, modEventBus);
     }
 
     @Override
