@@ -15,7 +15,7 @@ Integrated Tunnels compatibility with other mods.
 [[dependencies.integratedtunnelscompat]]
     modId="cyclopscore"
     type="required"
-    versionRange="[1.19.1,)"
+    versionRange="[1.19.10,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.integratedtunnelscompat]]
@@ -27,12 +27,12 @@ Integrated Tunnels compatibility with other mods.
 [[dependencies.integratedtunnelscompat]]
     modId="neoforge"
     type="required"
-    versionRange="[21.0.43-beta,)"
+    versionRange="[21.1.2,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.integratedtunnelscompat]]
     modId="minecraft"
     type="required"
-    versionRange="[1.21,]"
+    versionRange="[1.21.1,]"
     ordering="NONE"
     side="BOTH"
