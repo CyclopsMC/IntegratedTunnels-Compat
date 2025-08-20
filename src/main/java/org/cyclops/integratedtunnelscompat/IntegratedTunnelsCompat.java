@@ -3,7 +3,7 @@ package org.cyclops.integratedtunnelscompat;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import org.apache.logging.log4j.Level;
-import org.cyclops.cyclopscore.init.ModBaseVersionable;
+import org.cyclops.cyclopscore.init.ModBaseNeoForge;
 import org.cyclops.cyclopscore.proxy.IClientProxy;
 import org.cyclops.cyclopscore.proxy.ICommonProxy;
 import org.cyclops.integratedtunnelscompat.proxy.ClientProxy;
@@ -15,7 +15,7 @@ import org.cyclops.integratedtunnelscompat.proxy.CommonProxy;
  *
  */
 @Mod(Reference.MOD_ID)
-public class IntegratedTunnelsCompat extends ModBaseVersionable<IntegratedTunnelsCompat> {
+public class IntegratedTunnelsCompat extends ModBaseNeoForge<IntegratedTunnelsCompat> {
 
 
     /**

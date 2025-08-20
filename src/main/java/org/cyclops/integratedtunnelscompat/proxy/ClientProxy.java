@@ -1,6 +1,6 @@
 package org.cyclops.integratedtunnelscompat.proxy;
 
-import org.cyclops.cyclopscore.init.ModBase;
+import org.cyclops.cyclopscore.init.ModBaseNeoForge;
 import org.cyclops.cyclopscore.proxy.ClientProxyComponent;
 import org.cyclops.integratedtunnelscompat.IntegratedTunnelsCompat;
 
@@ -17,7 +17,7 @@ public class ClientProxy extends ClientProxyComponent {
     }
 
     @Override
-    public ModBase getMod() {
+    public ModBaseNeoForge<?> getMod() {
         return IntegratedTunnelsCompat._instance;
     }
 
