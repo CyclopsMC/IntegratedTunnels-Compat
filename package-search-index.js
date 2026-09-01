@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"org.cyclops.integratedtunnelscompat"},{"l":"org.cyclops.integratedtunnelscompat.proxy"}];updateSearchResults();
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html","k":"18"},{"l":"org.cyclops.integratedtunnelscompat"},{"l":"org.cyclops.integratedtunnelscompat.proxy"}];updateSearchResults();
