@@ -21,7 +21,7 @@ This mod is automatically packaged with [Integrated Tunnels](https://github.com/
 
 ### Branching Strategy
 
-For every major Minecraft version, a `master-{mc_version} branch exists.
+For every major Minecraft version, a `master-{mc_version}` branch exists.
 
 ### License
 All code and images are licenced under the [MIT License](https://github.com/CyclopsMC/IntegratedTunnels-Compat/blob/master-1.12/LICENSE.txt)
